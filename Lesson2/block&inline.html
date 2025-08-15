@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Phần tử block chứa các phần tử block, inline, dữ liệu 
+         Một số thẻ dạng block
+           <address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>, 
+           <figcaption>, <figure>, <footer>, <form>, <h1>-<h6>, <header>, <hr>, <li>, <main>, <nav>, \
+           <noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>.  -->
+    <p>Xin chào bạn 1</p>
+    <p>Xin chào bạn 2</p>
+
+
+    <!-- Phần tử inline chỉ chứa dữ liệu và các phần tử inline
+         Một số thẻ dạng inline
+           <a>, <abbr>, <acronym>, <b>, <bdo>, <big>, <br>, <button>, <cite>, <code>, <em>, <i>, <img>, 
+           <input>, <kdb>, <label>, <map>, <object>, <output>, <q>, <samp>, <script>, <select>, <small>, 
+           <span>, <strong>, <sup>, <sup>, <textara>, <time>, <tt>, <var> -->
+    <b>Xin chào bạn 1</b>
+    <b>Xin chào bạn 2</b>
+
+    <!-- Thẻ inline không được viết bên ngoài thẻ block -->
+
+    <!-- đúng: -->
+    <p>Xin chào <span>Kiên</span></p>
+    <!-- sai:  -->
+    <span>Xin chào <p>Kiên</p></span>
+    <!-- ngoại lê: thẻ <a> kiểu inline nhưng có thể chứa được phàn tử block
+          ví dụ: thẻ a bọc một khối block là 1 sản phẩm trong shopee-->
+    <a href="www.google.com">
+        <p>Nội dung</p>
+    </a>
+
+</body>
+
+</html>
