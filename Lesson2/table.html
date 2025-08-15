@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Css tạo border cho table -->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+    </style>
+
+    <!-- Thẻ table
+         trong thead: cột dùng th
+               tbody: cột dùng td -->
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ tên</th>
+                <th>Số điện thoại</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Văn Kiên</td>
+                <td><small>0988298796</small></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Trần Văn B</td>
+                <td>0123456789</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+
+    <!-- rowspan: tạo ô mở rộng trên nhiều hàng -->
+    <b>Basic HTML Table</b>
+    <table>
+
+        <thead>
+            <th>Hàng 0 cột 1</th>
+            <th>Hàng 0 cột 2</th>
+            <th>Hàng 0 cột 3</th>
+            <th>Hàng 0 cột 4</th>
+            <th>Hàng 0 cột 5</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">Hàng 1 cột 1</td>
+                <td rowspan="4">Hàng 1 cột 2</td>
+                <td rowspan="3">Hàng 1 cột 3</td>
+                <td>Hàng 1 cột 4</td>
+                <td>Hàng 1 cột 5</td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 2 cột 1</td> -->
+                <!-- <td>Hàng 2 cột 2</td> -->
+                <!-- <td>Hàng 2 cột 3</td> -->
+                <td>Hàng 2 cột 4</td>
+                <td>Hàng 2 cột 5</td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 3 cột 1</td> -->
+                <!-- <td>Hàng 3 cột 2</td> -->
+                <!-- <td>Hàng 3 cột 3</td> -->
+                <td>Hàng 3 cột 4</td>
+                <td>Hàng 3 cột 5</td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 4 cột 1</td> -->
+                <!-- <td>Hàng 4 cột 2</td> -->
+                <td>Hàng 4 cột 3</td>
+                <td>Hàng 4 cột 4</td>
+                <td>Hàng 4 cột 5</td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 5 cột 1</td> -->
+                <td rowspan="2">Hàng 5 cột 2</td>
+                <td rowspan="2">Hàng 5 cột 3</td>
+                <td>Hàng 5 cột 4</td>
+                <td>Hàng 5 cột 5</td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 6 cột 1</td> -->
+                <!-- <td>Hàng 6 cột 2</td> -->
+                <!-- <td>Hàng 6 cột 3</td> -->
+                <td>Hàng 6 cột 4</td>
+                <td>Hàng 6 cột 5</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+
+    <!-- colspan: tạo ô mở rộng trên nhiều cột -->
+    <table>
+        <tbody>
+            <tr>
+                <td rowspan="11">Hàng 1 cột 1</td>
+                <td>Hàng 1 cột 2</td>
+                <td colspan="3">Hàng 1 cột 3</td>
+                <!-- <td>Hàng 1 cột 4</td>
+                <td>Hàng 1 cột 5</td>
+            </tr> -->
+            <tr>
+                <!-- <td>Hàng 2 cột 1</td> -->
+                <td>Hàng 2 cột 2</td>
+                <td colspan="3">Hàng 2 cột 3</td>
+                <!-- <td>Hàng 2 cột 4</td>
+                <td>Hàng 2 cột 5</td>
+            </tr> -->
+            <tr>
+                <!-- <td>Hàng 3 cột 1</td> -->
+                <td colspan="4">Hàng 3 cột 2</td>
+                <!-- <td>Hàng 3 cột 3</td> -->
+                <!-- <td>Hàng 3 cột 4</td> -->
+                <!-- <td>Hàng 3 cột 5</td> -->
+            </tr>
+            <tr>
+                <!-- <td>Hàng 4 cột 1</td> -->
+                <td>Hàng 4 cột 2</td>
+                <td colspan="3">Hàng 4 cột 3</td>
+                <!-- <td>Hàng 4 cột 4</td>
+                <td>Hàng 4 cột 5</td> -->
+            </tr>
+            <tr>
+                <!-- <td>Hàng 5 cột 1</td> -->
+                <td>Hàng 5 cột 2</td>
+                <td colspan="3">Hàng 5 cột 3</td>
+                <!-- <td>Hàng 5 cột 4</td>
+                <td>Hàng 5 cột 5</td>
+            </tr> -->
+            <tr>
+                <!-- <td>Hàng 6 cột 1</td> -->
+                <td colspan="4">Hàng 6 cột 2</td>
+                <!-- <td>Hàng 6 cột 3</td>
+                <td>Hàng 6 cột 4</td>
+                <td>Hàng 6 cột 5</td> -->
+            </tr>
+            <tr>
+                <!-- <td>Hàng 7 cột 1</td> -->
+                <td>Hàng 7 cột 2</td>
+                <td>Hàng 7 cột 3</td>
+                <td>Hàng 7 cột 4</td>
+                <td>Hàng 7 cột 5</td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 8 cột 1</td> -->
+                <td>Hàng 8 cột 2</td>
+                <td>Hàng 8 cột 3</td>
+                <td>Hàng 8 cột 4</td>
+                <td>Hàng 8 cột 5</td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 9 cột 1</td> -->
+                <td>Hàng 9 cột 2</td>
+                <td>Hàng 9 cột 3</td>
+                <td>Hàng 9 cột 4</td>
+                <td>Hàng 9 cột 5</td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 10 cột 1</td> -->
+                <td>Hàng 10 cột 2</td>
+                <td>Hàng 10 cột 3</td>
+                <td>Hàng 10 cột 4</td>
+                <td>Hàng 10 cột 5</td>
+            </tr>
+            <tr>
+                <!-- <td>Hàng 11 cột 1</td> -->
+                <td colspan="3">Hàng 11 cột 2</td>
+                <!-- <td>Hàng 11 cột 3</td>
+                <td>Hàng 11 cột 4</td> -->
+                <td>Hàng 11 cột 5</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
