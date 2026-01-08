@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Thẻ Semantic: những thẻ có nội dung bên trong ứng với tên thẻ
+     VD: <article>: nội dung độc lập, khép kín
+         <aside>: nội dung ngoài nội dung trang
+         <header>: tiêu đề cho một tài liệu hoặc section   
+         <footer>: chân trang cho tài liệu hoặc sedtion
+         <main>: nội dung chính của 1 tài liệu
+         <nav>(navigation-dẫn đường): các liên kết điều hướng
+         <section>: một phần trong tài liệu
+
+
+         <details>: các chi tiết bổ sung mà người dùng có thể xem hoặc ẩn
+         <summary>: tiêu đề hiển thị cho phần tử <details>
+         <figcaption>: chú thích cho phần tử <figure>
+         <figure>: nội dung độc lập như hình minh họa, sơ đồ, ảnh, danh sách mã,...   
+         <mark>: văn bản được đánh dấu, nhấn mạnh
+         <time>: ngày, giờ
+        -->
+    <h2>Không có Semantic</h2>
+     <div class="header">
+        Header
+     </div>
+
+     <div class="sidebar">
+        Sidebar
+     </div>
+
+     <div class="content">
+        <div class="post">Post</div>
+        <div class="post">Post</div>
+        <div class="post">Post</div>
+     </div>
+
+     <div class="footer">
+        Footer
+     </div>
+
+
+    <h2>Có Semantic</h2>
+    <header class="header">
+        Header
+    </header>
+
+     <nav class="sidebar">
+        Sidebar
+     </nav>
+
+     <main class="content">
+        <article class="post">Post</article>
+        <article class="post">Post</article>
+        <article class="post">Post</article>
+     </main>
+
+     <footer class="footer">
+        Footer
+     </footer>
+</body>
+</html>
