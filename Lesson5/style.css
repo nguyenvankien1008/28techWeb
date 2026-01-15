@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .header {
+    background: green;
+}
+
+p {
+    color: orange;
+    font-size: 40px;
+}
+
+.test {
+    text-align: center;
+} */
+
+.box {
+            /* box-sizing: xác định phạm vi của box; giá trị mặc định là content-box */
+            /* Note: padding x 2 + content < height */
+            /* Nếu content bị quá kích thước đã set -> tràn content ra ngoài box */
+            /* vw: view width; vh: view height */
+            box-sizing: border-box;
+            background-color: #8d8dff;
+            color: #fff;
+            padding: 20px;
+            border: 10px solid #000;
+            height: 100px;
+            /* width: 300px; */
+            width: 50vw;
+            height: 50vh;
+            min-width: 200px;
+            max-width: 400px;
+            min-height: 200px;
+            max-height: 300px;
+
+            /* Text-align: căn ngang văn bản(center, right, left, justify) */
+            text-align: center;
+            
+            /* Text-transform: viết hoa, viết thường, viết hoa chữ cái đầu(uppercase, lowercase, capitalize) */
+            text-transform: capitalize;
+
+            /* Font chữ: trang font.google.com */
+            /* font-family: 'Roboto', sans-serif; */
+            
+            /* Chữ nghiêng */
+            font-style: italic;
+            /* font-style: oblique; */
+
+            /* font-weight: độ dày của chữ */
+            font-weight: bold;
+        }
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 800px;
+}
