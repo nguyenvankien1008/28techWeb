@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .inline, .block, .inline-block {
+            background: orange;
+            border: 1px solid #000;
+        }
+        
+        .block {
+            display: block;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .visibility {
+            color: blue;
+            /* visibility: hidden -> ẩn nhưng vẫn chiếm diện tích */
+            visibility: hidden;   
+        }
+    </style>
+
+
+    <h2>1. display: inline;</h2>\
+    <!-- không đặt được chiều rộng và chiều cao, không thêm được margin và padding cho bên trên và bên dưới -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="inline">Thẻ inline 1</span> <span class="inline">Thẻ inline 2</span> Aut doloribus molestiae exercitationem repudiandae quae tenetur rem, quisquam quidem iste! 
+        Enim, quo cumque! Facilis id quos quidem recusandae et suscipit tempora.
+    </p>
+
+    <h2>2. display: block;</h2>\
+    <!-- chiều rộng kéo dài từ trái sang phải, luôn bắt đầu ở một hàng mới. Cho phép đặt chiều rộng và chiều cao, cho phép đặt margin, padding cho bên trên và bên dưới -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="block">Thẻ block 1</span> <span class="block">Thẻ block 2</span> Aut doloribus molestiae exercitationem repudiandae quae tenetur rem, quisquam quidem iste! 
+        Enim, quo cumque! Facilis id quos quidem recusandae et suscipit tempora.
+    </p>
+
+    <h2>3. display: inline-block;</h2>\
+    <!-- Chiều rộng mặc định bằng chiều rộng của element, không bắt đầu ở một hàng mới -->
+    <!-- Cho phép đặt chiều rộng và chiều cao, cho phép đặt margin, padding cho bên trên và bên dưới -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="inline-block">Thẻ inline-block 1</span> <span class="inline-block">Thẻ inline-block 2</span> Aut doloribus molestiae exercitationem repudiandae quae tenetur rem, quisquam quidem iste! 
+        Enim, quo cumque! Facilis id quos quidem recusandae et suscipit tempora.
+    </p>
+
+    <h2>4. display: none;</h2>\
+    <!-- ẩn đi hoàn toàn, không chiếm khoảng trống -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="none">Thẻ none 1</span> <span class="none">Thẻ none 2</span> Aut doloribus molestiae exercitationem repudiandae quae tenetur rem, quisquam quidem iste! 
+        Enim, quo cumque! Facilis id quos quidem recusandae et suscipit tempora.
+    </p>
+
+    <p class="visibility">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla pariatur sed beatae? Excepturi ut assumenda nam quaerat voluptatum, debitis quod ullam quas libero fugiat, porro cum! Porro ex hic nostrum!</p>
+
+</body>
+</html>
