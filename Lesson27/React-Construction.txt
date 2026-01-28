@@ -1,0 +1,29 @@
+node_modules: chứa các thư viện được cài đặt cho dự án, tất cả cài đặt sẽ được lưu tại đây, chúng ta không thao tác trong thư mục này.
+
+public: chứa tất cả file output, là các file sẽ tương tác trực tiếp với trình duyệt như: HTML, image, …
+
+src: chứa tất cả các file input, đây là các file mà chúng ta sẽ quan tâm nhất, thao tác phần lớn ở những file này, gồm các file Javascript, CSS,...
+
+package.json: file này để lưu trữ thông tin (tên package, phiên bản, các dependencies) mà project của bạn sử dụng.
+
+README.md: file này để mô tả dự án, hướng dẫn cài đặt dự án do chính bạn tự viết ra. Tìm hiểu cú pháp viết file Markdown tại https://www.markdownguide.org/basic-syntax/
+
+/public/index.html
+File này không chứa bất kỳ nội dung nào hiển thị ngoài trình duyệt.
+Trong file này ta chỉ cần quan tâm đến dòng <div id="root"></div>, tất cả HTML sau này được render vào trong id="root" này.
+
+/src/App.js
+Đoạn code bên trong return chính là nội dung được hiển thị ngoài trình duyệt.
+File này liên kết với /public/index.html thông qua file /src/index.js
+Mở trình duyệt lên và bật F12 lên để xem nội dung HTML, code trong file App.js đã được render vào trong id="root".
+
+/src/index.js
+Chúng ta quan tâm đến các đoạn code sau:
+    import App from './App';
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
+    );
+Nội dung trên có nghĩa là file /src/index.js lấy nội dung từ function App của file /src/App.js render ra nội dung trả về id="root" của file /public/index.html, sau đó hiển thị nội dung này ra trình duyệt.
