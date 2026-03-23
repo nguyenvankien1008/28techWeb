@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = "Nguyen Van Kien";
+        console.log(a.length);
+
+        // indexOf: tim vi tri' dau tien trong String(phan biet capslock)
+        // cu phap': string.indexOf(searchValue, start)
+        var myString1 = `Xin chao! Toi ten Kien. Toi nam nay 20 tuoi.`
+        console.log(myString1.indexOf("Toi")); // tra ve 10
+        console.log(myString1.indexOf("Nam")); // tra ve -1
+        console.log(myString1.indexOf("Kien")); // tra ve 18
+        console.log(myString1.indexOf("kien")); // tra ve -1
+        console.log(myString1.indexOf("Toi", 11)); // tra ve 24
+
+        // lastIndexOf: nguoc lai voi' indexOf
+        var myString2 = `Xin chao! Toi ten Kien. Toi nam nay 20 tuoi.`
+        console.log(myString2.lastIndexOf("Toi", 25)); // tra ve 24
+        console.log(myString2.lastIndexOf("Toi", 23)); // tra ve 10
+        console.log(myString2.lastIndexOf("Toi", 10)); // tra ve 10
+        console.log(myString2.lastIndexOf("Toi", 9)); // tra ve -1
+
+
+        // slice: cat' chuoi~ va tra? ve 1 chuoi~ moi'
+        // cu phap': string.slice(start, end)
+        var myString3 = `Xin chao! Toi ten Kien. Toi nam nay 20 tuoi.`
+        console.log(myString3.slice(10, 22));
+        console.log(myString3.slice(0)); // lay' toan bo chuoi~
+        console.log(myString3.slice(0, 1)); // lay' ki' tu dau tien cua chuoi~
+        console.log(myString3.slice(-1)); // lay' ki' tu cuoi' cung cua? chuoi~
+
+
+        // replace: thay the' chuoi~ dau tien ma no' tim thay'
+        // cu phap': string.replace(searchValue, newValue)
+        var myString4 = `Xin chao! Toi ten Kien. Toi nam nay 20 tuoi.`
+        console.log(myString4.replace("Toi", "Minh"));
+        // thay the' tat' ca? cac' chuoi~ tim thay': 
+        // dung Bieu thuc' chinh' quy(Regular Expression)
+        console.log(myString4.replace(/Toi/g, "Minh"));
+
+        // viet hoa, viet thuong
+        console.log(myString4.toUpperCase());
+        console.log(myString4.toLowerCase());
+
+        // trim: cat' bo? khoang? trang' o? 2 dau String
+        var myString5 = `  Xin chao! Toi ten Kien. Toi nam nay 20 tuoi.   `;
+        console.log(myString5);
+        console.log(myString5.trim());
+
+        // charAt: lay' ki' tu thong qua vi tri' la index
+        console.log(a.charAt()); // lay' ki' tu dau tien
+        console.log(a.charAt(0));
+        console.log(a.charAt(1));
+        console.log(a.charAt(a.length - 1)); // lay' ki' tu cuoi cung
+
+        // split: chuyen? 1 chuoi~ thanh 1 array, yeu cau tim ra diem? chung cua chuoi~ do'
+        var myString6 = "HTML5, CSS3, Javascript";
+        console.log(myString6.split()); // ca? string la 1 phan tu
+        console.log(myString6.split("")); // moi~ ki' tu la 1 phan tu
+        console.log(myString6.split(", ")); // moi~ tu la 1 phan tu
+        console.log(myString6.split(", ", 2)); // moi~ tu la 1 phan tu, toi' da 2 phan tu
+
+        
+
+
+    </script>
+</body>
+
+</html>
