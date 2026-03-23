@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var a = 10;
+        // var b = "test";
+        // var c = 'test2';
+        // var d = `test3`; // dùng dấu backtick(nút di gôn)
+
+
+        // var e = true; // kieu boolean
+
+        // var f; // kieu Undefined
+        // console.log(f);
+
+        // var g = null; // kieu Null
+        // console.log(g);
+
+
+
+        // vi du ve Function:
+        // function sum(a,b) {
+        //     console.log(a+b);
+
+        // }
+        // sum(10,20);
+
+        // vi du ve Object: 2 loai: Object va Array
+        // 1) Object:
+        // var infoUser = {
+        //     name: "Nguyen Van Kien",
+        //     age: 20,
+        //     phone: '0988298796',
+        //     email:'kiensk108@gmail.com',
+        //     sum: function (a,b) {
+        //         alert(a+b);
+        //     }
+        // }
+        // console.log(infoUser.name);
+        // console.log(infoUser.phone);
+        // console.log(infoUser.email);
+
+        // infoUser.sum(10,20);
+
+        // 2) Array:
+        var listUser = [
+            'Le Van A',
+            "Nguyen Thi B",
+            "Do Van C",
+
+        ]
+        listUser.sum = function (a, b) {
+            alert(a + b);
+        }
+        console.log(listUser);
+        console.log(listUser[0]);
+        // console.log(listUser[3](10,20));
+        listUser.age = 20;
+        listUser.sum(10,20);
+        
+
+
+    </script>
+</body>
+
+</html>
