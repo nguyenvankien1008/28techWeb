@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function sum(a, b, c, d) {
+        //     return(a + b + c + d);
+        // }
+        // let result = sum(10,20,30,40);
+        // console.log(result);
+
+        // function sum(a, b, c, d) {
+        //     console.log(arguments); // only in function
+        //     let tong = 0;
+        //     for(item of arguments) {
+        //         tong += item; // tong = tong + item
+        //         // console.log(item);
+                
+        //     }
+        //     return tong;
+            
+        //     // return(a + b + c + d);
+        // }
+        // let result = sum(10,20,30,40,50,60,70);
+        // console.log(result);
+        
+    </script>
+
+    <script>
+        // function func() {
+        //     console.log("Hàm 1");
+        // }
+        // function func() {
+        //     console.log("Hàm 2");
+        // }
+        // function func() {
+        //     console.log("Hàm 3");
+        // }
+        
+        // func();
+
+    </script>
+
+    <script>
+        // function func1() {
+        //     var a = 10;
+        //     console.log(a);
+        // }
+        // // console.log(a);
+        
+        // func1();
+    </script>
+
+    <script>
+        // function funcA() {
+        //     console.log("Hàm A");
+
+        //     function funcB() {
+        //         console.log("Hàm B");
+                
+        //     }
+        //     funcB();
+        // }
+        // funcB();
+
+        // funcA();
+    </script>
+
+    <script>
+        // Declaration function: hàm định nghĩa
+        // có tính hoisting: gọi đc hàm trước khi khai báo hàm đó
+
+        // let result = sum(10,20,30,40,50,60,70);
+        // console.log(result);
+
+        // function sum() {
+        //     let tong = 0;
+        //     for(item of arguments) {
+        //         tong += item; // tong = tong + item
+        //         // console.log(item);
+                
+        //     }
+        //     return tong;
+            
+        //     // return(a + b + c + d);
+        // }
+        
+    </script>
+
+    <script>
+        // Expression function: hàm biểu thức
+        // k có tính hoisting: nếu gọi hàm trước lúc khai báo thì sẽ gặp lỗi
+
+        
+        // let result = sum(10,20,30,40,50,60,70);
+        // console.log(result);
+
+        // function sum() {
+        //     let tong = 0;
+        //     for(item of arguments) {
+        //         tong += item; // tong = tong + item
+        //         // console.log(item);
+                
+        //     }
+        //     return tong;
+            
+        //     // return(a + b + c + d);
+        // }
+
+        // let result = sum(10,20,30,40,50,60,70);
+        // console.log(result);
+    </script>
+
+    <script>
+        // Arrow function: hàm mũi tên
+        // k có hoisting
+        // k có arguments, để lấy các đối số đã truyền dưới dạng 1 mảng -> dùng cú pháp spread
+
+        // const sum = () => {
+        //     console.log("Ok");
+        // }
+
+        // sum();
+
+
+        //  const sum = (...test) => { // cú pháp spread: ... + random word
+        //     console.log(test);
+            
+        //     let tong = 0;
+        //     for(item of arguments) {
+        //         tong += item; // tong = tong + item
+        //         // console.log(item);
+                
+        //     }
+        //     return tong;
+            
+        //     // return(a + b + c + d);
+        // }
+
+        // let result = sum(10,20,30,40,50,60,70);
+        // console.log(result);
+        
+    </script>
+
+    <script>
+        // Ví dụ 1: 
+        // var mang = [1,2,3,4,5,6,7,8,9,10];
+        // function sumChan(array) {
+        //     let sum = 0;
+        //     for(const item of array) {
+        //         if(item % 2 == 0) {
+        //             sum += item;
+        //         }
+        //     }
+        //     return sum;
+
+        // }
+        // let result = sumChan(mang);
+        // console.log(result);
+        
+        // Ví dụ 2: bieuThuc = 1/n + 2/n + ... + n/n
+        function tinhBieuThuc(n) {
+            let result = 0;
+            for (let i = 1; i <= n; i++) {
+                result += i/n;
+            }
+            return result;
+        }
+
+        let n;
+
+        do {
+            n = prompt("Nhập vào số n: ");
+            n = parseInt(n);
+            if(n <= 0) {
+                console.log("Vui lòng nhập số lớn hơn 0.");
+            } else {
+                let result = tinhBieuThuc(n);
+                console.log(result);
+                
+            }
+        } while (n <= 0);
+        
+
+
+    </script>
+
+    
+</body>
+</html>
