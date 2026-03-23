@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // let sum = 0;
+
+        // // forEach: duyệt qua từng phần tử của mảng, thay đổi mảng đó
+        // numbers.forEach(function(item, index, array) {
+        //     // console.log(item, index, array);
+        //     sum += item;
+        //     // numbers[index] = 20;
+        // });
+
+        // console.log(sum);
+        // console.log(numbers);
+
+        // every: kiểm tra tất cả các phần tử, trả về True or False, 1 item False là False hết
+            const Subject = [{
+                name: "Toán",
+                point: 8.6
+            },
+            {
+                name: "Lý",
+                point: 9.2
+            },
+            {
+                name: "Hóa",
+                point: 8.5
+            },
+            {
+                name: "Tin",
+                point: 7.8
+            },
+            {
+                name: "Tin",
+                point: 9
+            },
+        ]
+
+            // const hocSinhGioi = Subject.every(function(item){
+            //     return item.point >= 8;
+            // });
+
+            // // console.log(hocSinhGioi);
+            
+            // if(hocSinhGioi) {
+            //     console.log("Đây là học sinh Giỏi!");
+            // } else {
+            //     console.log("Đây không phải là học sinh Giỏi!");
+            // }
+        
+            // some: kiểm tra chỉ cần 1 phần tử trong mảng thỏa điều kiện là đc
+            // const Fail = Subject.some(function(item){
+            //     return item.point < 8;
+            // });
+
+            // if(Fail) {
+            //     console.log("Ở lại lớp");
+            // } else {
+            //     console.log("Pass, được lên lớp");
+            // }
+
+            // find: tìm xem có giá trị nào trong mảng giống với giá trị đang tìm, nếu có thì trả ra phần tử đó
+            // const xemDiemTin = Subject.find(function(item){
+            //     return item.name == "Tin";
+            // });
+            
+            // // const xemDiemTin = Subject.find(function(item){
+            // //     return item.name == "Địa lý";
+            // // });
+
+            // console.log(xemDiemTin);
+            // console.log(xemDiemTin.point);
+
+            // // console.log(undefined.point);
+            
+            // if(xemDiemTin) {
+            //     console.log("Điểm tin của bạn là: ", xemDiemTin.point);
+            // } else {
+            //     console.log("Không tìm thấy môn học");
+            // }
+
+            // filter: giống find, trả ra được nhiều phần tử hơn dưới dạng mảng
+            // const xemDiemTin = Subject.filter(function(item){
+            //     return item.name == "Tin";
+            // });
+            
+            // console.log(xemDiemTin);
+
+            // if(xemDiemTin) {
+            //     console.log("Điểm tin của bạn là: ", xemDiemTin);
+            // } else {
+            //     console.log("Không tìm thấy môn học");
+            // }
+
+            // map: giống forEach, sau đó trả về 1 mảng mới với số lượng phần tử bằng mảng cũ,
+            // nhưng giá trị phần tử thì phụ thuộc vào lệnh return trong hàm 
+            // let result = numbers.map((item, index, array) => {
+            //     // console.log(item);
+            //     // return item;
+            //     // return numbers;
+            //     return undefined;
+            // })
+
+            // console.log(result);
+
+            // let newList = Subject.map((item) => {
+            //     let hocLuc = "";
+            //     if(item.point >= 8){
+            //         hocLuc = "Giỏi";
+            //     } else if(item.point <8 && item.point >= 6.5){
+            //         hocLuc = "Khá";
+            //     } else {
+            //         hocLuc = "Trung bình";
+            //     }
+            //     // console.log(item);
+            //     return {
+            //         name: item.name,
+            //         hocLuc: hocLuc
+            //     };
+            // })
+            
+            // console.log(Subject);
+            // console.log(newList);
+
+            // reduce: giống forEach, sau đó tính toán các phần tử đó rồi trả về 1 giá trị cuối cùng
+            // initialValue nếu không truyền vào, mặc định là giá trị đầu tiên của mảng
+            // let sum = numbers.reduce((total, item) => {
+            //     return total + item;
+            // });
+
+            // let average = numbers.reduce((total, item) => {
+            //     console.log(total);
+            //     return total + item/numbers.length;
+            // }, 0)
+
+            // console.log("--------------------");
+            // console.log(sum);
+            // console.log(average);
+
+            let sum = Subject.reduce((total, item) => {
+                return total + item.point;
+            }, 0);
+
+            let average = Subject.reduce((total, item) => {
+                return total + item.point/Subject.length;
+            }, 0);
+
+            console.log(sum);
+            console.log(average);
+            
+
+
+            
+            
+            
+
+            
+
+
+            
+    </script>
+</body>
+</html>
