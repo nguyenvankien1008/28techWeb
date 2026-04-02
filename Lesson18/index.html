@@ -7,24 +7,91 @@
 </head>
 <body>
 
+    
+    <!-- <zone onclick = "openTab()">Mở tab mới</zone> -->
     <button onclick = "openTab()">Mở tab mới</button>
+    <button onclick = "closeTab()">Đóng tab </button>
+    <button onclick="reloadWeb()">Reload</button>
 
 
     <script>
         // BOM: Browser Object Model
         // window: 1 phương thức cao nhất, chứa các object
-        console.log(window);
+        // console.log(window);
 
-        // Chiều cao, rộng của viewport
-        console.log(window.innerHeight);
-        console.log(window.innerWidth);
+        // // Chiều cao, rộng của viewport
+        // console.log(window.innerHeight);
+        // console.log(window.innerWidth);
+
+        // Đóng, mở window
+        // let tab;
         
-        function openTab() {
-            window.open("http://127.0.0.1:5500/Lesson18/28tech.html", 
-                "_blank",
-                "width=1200, height=600, top=200, left=300"
-            );
-        }
+        // function openTab() {
+        //     tab = window.open("http://127.0.0.1:5500/Lesson18/28tech.html", 
+        //         "_blank",
+        //         "width=1200, height=600, top=200, left=300"
+        //     );
+        // }
+
+        // function closeTab() {
+        //     tab.close();
+        // }
+        
+
+        // BOM Location
+        // Các thuộc tính: 
+        // hash: lấy phần sau dấu # của URL
+        // host: lấy hostname và port của URL
+        // hostname: lấy hostname
+        // href: lấy url
+        // origin: trả về protocol, hostname và port của url
+        // pathname: lấy pathname của url
+        // port: lấy port của url
+        // search: lấy phần query string của url( sau dấu ?)
+
+        // console.log(window.location);
+
+        // function reloadWeb() {
+        //     window.location.reload();
+        // }
+
+        // setInterval(() => {
+        //     window.loction.reload();
+        // }, 5000);
+
+        // let href = window.location.href;
+        // setTimeout(() => {
+        //     console.log(href);
+        // }, 5000);
+
+
+        
+
+        // BOM Screen: lấy chiều rộng, cao của màn hình máy tính
+        // let screenWidth = window.screen.width;
+        // let screenHeight = window.screen.height;
+        // setTimeout(() => {
+        //     console.log(screenWidth);
+        //     console.log(screenHeight);
+            
+        // }, 5000);
+
+        
+        // BOM History: xem lại lịch sử lướt web
+        // history.length: số trang đã truy cập
+        // history.back: quay trở lại trang trước đó
+        // history.forward: truy cập trang tiếp theo
+        // history.go(number): đi tới trang chỉ định,
+        // nếu number âm thì tính từ trang hiện tại trừ đi number, dương thì cộng với number
+
+        // console.log(window.history);
+
+        // BOM Navigator: kiểm tra các thông tin về người dùng trình duyệt
+        console.log(window.navigator);
+
+        // BOM Popup: alert, confirm, prompt
+        // BOM Timing: setTimeout, setInterval(function, milliseconds)
+        
         
     </script>
 </body>
