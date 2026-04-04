@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Nội dung thẻ h1</h1>
+
+    <a href="#">Trang facebook</a> -->
+
+    <style>
+        .light {
+            background: lightblue;
+        }
+
+        .dark {
+            background: darkblue;
+            color: #fff;
+        }
+
+        .test-2 {
+            color: blue;
+        }
+    </style>
+
+    <div class = "light" id = "box">Nội dung thẻ div</div>
+    <div class = "light" id = "box">Nội dung thẻ div</div>
+    <div class = "light" id = "box">Nội dung thẻ div</div>
+    <div class = "light" id = "box">Nội dung thẻ div</div>
+
+    <ul id = "menu">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+
+    <h2>Thẻ h2 01</h2>
+    <h2>Thẻ h2 02</h2>
+    <h2>Thẻ h2 03</h2>
+    <h2>Thẻ h2 04</h2>
+    <h2>Thẻ h2 05</h2>
+
+
+    <h3 class = "test">Thẻ 01</h3>
+    <h4 class = "test">Thẻ 02</h4>
+    <h2 class = "test">Thẻ 03</h2>
+    <h1 class = "test">Thẻ 04</h1>
+    <h5 class = "test">Thẻ 05</h5>
+
+
+    <style>
+        .box1 .box2 h2 .link {
+            background-color: yellow;
+        }
+
+        .box1 .box2 h2 .link.active {
+            background-color: orange;
+        }
+    </style>
+
+
+    <div class="box-1">
+        <div class="box-2">
+            <h2>
+                <a href="#" class="link">Nội dung thẻ a</a>
+            </h2>
+            <h2>
+                <a href="#" class="link">Nội dung thẻ a</a>
+            </h2>
+        </div>
+    </div>
+
+
+    <script>
+        // console.log(document);
+
+        // const box = document.getElementById("box");
+        // box.classList.add("dark");
+        // console.log(box);
+        
+        // const menu = document.getElementById("menu");
+        // console.log(menu);
+
+        // const listH2 = document.getElementsByTagName("h2");
+        // console.log(listH2);
+        // console.log(listH2[3]);
+        
+        // const listTest =document.getElementsByClassName("test");
+        // console.log(listTest);
+        // console.log(...listTest);
+        // console.log([...listTest]);
+        
+        
+        // [...listTest].forEach(item => {
+        //     // console.log(item);
+        //     item.classList.add("test-2");
+        //     item.classList.remove("test");
+        // });
+
+        // const element = document.querySelector(".box1 .box2 h2 .link");
+        // element.classList.add("active");
+        // console.log(element);
+        
+        // const elements = document.querySelectorAll(".box1 .box2 h2 .link");
+        // [...elements].forEach(item => {
+        //     item.classList.add("test");
+        // });
+        // console.log(elements);
+        
+        const box1 = document.querySelector("#box");
+        console.log(box1);
+
+        const box2 = document.querySelectorAll("h2");
+        console.log(box2);
+
+        const box3 = document.querySelectorAll(".test");
+        console.log(box3);
+        
+        
+        
+    </script>
+</body>
+</html>
