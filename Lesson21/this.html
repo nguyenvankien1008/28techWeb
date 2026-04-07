@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- This: trả về đối tượng mà nó đang thuộc về -->
+    <!-- Nếu console.log(this) ở ngoài cùng chương trình, trả về đối tượng window -->
+    <!-- Trong hàm, nếu không có strict mode, this sẽ là 1 biến toàn cục, và cấp cao nhất là đối tượng window -->
+    <!-- Nếu có strict mode, this trong hàm đó là 1 biến chưa được định nghĩa, nên giá trị của nó là undefined -->
+    <!-- Trong các event, this là đối tượng hmtl đang được gán event( trỏ về đối tượng trước dấu chấm) -->
+    <!-- Trong object, tương tự như với event -->
+    <!-- Trong arrow function, không tồn tạo đối tượng this, khi dùng trong đó sẽ trả về đối tượng window -->
+    
+
+    <script>
+
+        // console.log(this);
+        
+        // console.log(window.location.hred);
+        // console.log(this.location.href);
+        
+
+    </script>
+
+    <script>
+
+        // "use strict";
+
+        // function test() {
+        //     console.log(this);
+            
+        // }
+
+        // test();
+
+    </script>
+
+    <button id="button">Button</button>
+
+    <ul id="menu">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+
+    <script>
+
+        const button = document.querySelector("#button");
+
+        button.addEventListener("click", function() {
+            console.log(this);
+            
+        });
+
+        const listItem = document.querySelectorAll("#menu li");
+        console.log(listItem);
+
+        // [...listItem].forEach(function(item) {
+        //     item.addEventListener("click", function() {
+        //     console.log(item);
+
+        //         console.log(this);
+                                
+        //     });
+        // });
+
+        [...listItem].forEach(function(item) {
+            item.addEventListener("click", () =>    {
+                console.log(item);
+                console.log(this);
+                                
+            });
+        });
+        
+
+    </script>
+
+    <script>
+
+        // let info = {
+        //     fullName: "Nguyễn Văn Kiên",
+        //     age: 21,
+        //     email: "kientest@gmail.com",
+        //     getFullName: function () {
+        //         console.log(inFo.fullName);
+        //         console.log(this.fullName);
+                
+        //     },
+        //     cccd: {
+        //         fullName: "NGUYỄN VĂN KIÊN",
+        //         address: "Số 123, đường ABC",
+        //         getInfoCCCD: function() {
+        //             console.log(this.fullName);
+                    
+        //         }
+        //     }
+        // }
+
+        // info.getFullName();
+
+        // info.cccd.getInfoCCCD();
+
+    </script>
+</body>
+</html>
