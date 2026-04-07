@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Hoisting: sử dụng 1 biến mà không cần khai báo trước -->
+    <!-- Javascript luôn tự chuyển các khai báo biến lên trên đầu  -->
+    <!-- var: nếu chưa gán giá trị, trả về undefined -->
+    <!-- let, const: nếu chưa gán giá trị, xuất hiện thông báo "a is not defined"(a chưa đc định nghĩa) -->
+    <!-- var có tính hoisting, còn let và const thì không -->
+    
+    <script>
+
+        // console.log(a);
+
+        // var a = 10;
+
+        // var a;
+        // console.log(a);
+
+
+        // a = 10;
+        // console.log(a);
+        
+        
+    </script>
+
+    <script>
+
+        // console.log(a);
+
+        // let a = 10;
+
+
+        // let a;
+        // console.log(a);
+
+        // a = 10;
+
+
+        // console.log(a);
+
+        // const a = 10;
+        
+
+    </script>
+
+
+    <script>
+
+        // Hàm trong hoisting: chỉ declaration function có tính hoisting, còn expression và arrow function thì không
+        // Cú pháp: 
+        // Declaration function: function tenHam() { // Code }
+        // Expression function: var tenBien = function() { // Code }
+        // Arrow function : var tenBien = () => { // Code }
+
+        let a = 10;
+        let b = 20;
+
+        let c = sum(a, b);
+
+        console.log(c);
+
+        // function sum(x, y) {
+        //     return (x + y);
+        // }
+
+        // var sum = function(x, y) {
+        //     return (x + y);
+        // }
+
+        var sum = (x, y) => (x + y);
+        
+
+
+
+    </script>
+</body>
+</html>
