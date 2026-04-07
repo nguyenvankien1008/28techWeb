@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Scope: phạm vi truy cập, đề cập đến ngữ cảnh của đoạn code -->
+    
+
+
+    <script>
+
+        // Biến toàn cục
+
+        // let a = 10;
+        
+        // function test() {
+        //     console.log(a);
+            
+        //     function test2() {
+        //         console.log(a);
+                
+        //     }
+
+        //     test2();
+        // }
+
+        // test();
+
+    </script>
+
+    <script>
+
+        // Biến cục bộ
+
+        function test() {
+            var a = 10;
+            console.log(a);
+
+            function test2() {
+                console.log(a);
+                
+            }
+
+            test2();
+            
+        }
+
+        test();
+
+        console.log(a);
+        
+
+    </script>
+</body>
+</html>
