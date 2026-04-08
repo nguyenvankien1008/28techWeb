@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- JSON: Javascript Object Notation, đc lưu dưới dạng string, để gửi đi dữ liệu dưới dạng json giữa fe và be -->
+    <!-- Đối với json object, key phải đc đặt trong dấu nháy đơn, cặp key - value cuối cùng k có dấu phảy -->
+
+    <script>
+
+        // let infoUser = {
+        //     fullName: "Nguyễn Văn Kiên",
+        //     email: "kientest@gmail.com",
+        //     age: 21,
+        // };
+
+        // // Ví dụ 1: JSON có giá trị là Object
+
+        // let infoUserJSON = `
+        // {
+        //     "fullName": "Nguyễn Văn Kiên",
+        //     "email": "kientest@gmail.com",
+        //     "age": 21
+        // }
+        // `;
+
+        // console.log(infoUserJSON);
+
+        // // Convert từ JSON sang JS và ngược lại
+
+        // let infoUserJSONtoJS = JSON.parse(infoUserJSON);
+        // let infoUserJStoJSON = JSON.stringify(infoUser);
+
+        // console.log(infoUserJSONtoJS);
+        // // console.log(infoUserJSONtoJS.fullName);
+        // // console.log(infoUserJSONtoJS.email);
+        // console.log(infoUserJStoJSON);
+        
+
+    </script>
+
+
+    <script>
+
+        // // Ví dụ 2: JSON có giá trị là Number
+
+        // let jsonNumber = `5`;
+
+        // console.log(jsonNumber);
+        // console.log(JSON.parse(jsonNumber));
+        
+        
+
+    </script>
+
+
+    <script>
+
+        // // Ví dụ 3: JSON có giá trị là String
+
+        // let jsonString = `"Xin chào bạn!"`;
+
+        // console.log(jsonString);
+        // console.log(JSON.parse(jsonString));
+        
+        
+
+    </script>
+
+
+    <script>
+
+        // // Ví dụ 4: JSON có giá trị là Boolean
+
+        // let jsonBoolean = `true`;
+
+        // console.log(jsonBoolean);
+        // console.log(JSON.parse(jsonBoolean));
+        
+        
+
+    </script>
+
+    <div id="listUser" class="user-list"></div>
+
+
+    <script>
+
+        // // Ví dụ 5: JSON có giá trị là Array
+
+        // let jsonArray = `
+        // [
+        //     {
+        //         "id" : 1, 
+        //         "name": "Le Van A",
+        //         "email": "levana@gmail.com"
+        //     },
+        //     {
+        //         "id" : 2, 
+        //         "name": "Le Van B",
+        //         "email": "levanb@gmail.com"
+        //     },
+        //     {
+        //         "id" : 3, 
+        //         "name": "Le Van C",
+        //         "email": "levanc@gmail.com"
+        //     }
+        // ]
+        // `;
+
+        // let listUser = JSON.parse(jsonArray);
+
+        // let htmls = "";
+
+        // listUser.forEach(item => {
+        //     htmls += `
+        //         <div class = "user-item">
+        //             <div class = "inner-name">${item.name}</div>
+        //             <div class = "inner-email">${item.email}</div>
+        //         </div>
+        //     `;
+            
+        // });
+
+        // const divUserList = document.querySelector("#listUser");
+        // divUserList.innerHTML = htmls;
+
+        // console.log(htmls);
+        
+        
+
+    </script>
+
+
+     <script>
+
+        // Ví dụ 5: JSON có giá trị là Null
+
+        let jsonNull = `null`;
+
+        console.log(jsonNull);
+        console.log(JSON.parse(jsonNull));
+        
+        
+
+    </script>
+</body>
+</html>
