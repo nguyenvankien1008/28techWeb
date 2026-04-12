@@ -1882,6 +1882,5 @@
       "url": "https://dummyjson.com/products/category/womens-watches",
       "id": "iuxCYK0Hmrw"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }
