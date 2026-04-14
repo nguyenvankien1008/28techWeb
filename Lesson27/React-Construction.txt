@@ -27,3 +27,5 @@ Chúng ta quan tâm đến các đoạn code sau:
         </React.StrictMode>
     );
 Nội dung trên có nghĩa là file /src/index.js lấy nội dung từ function App của file /src/App.js render ra nội dung trả về id="root" của file /public/index.html, sau đó hiển thị nội dung này ra trình duyệt.
+
+Thứ tự chạy: App.js -> Index.js -> index.html -> Browser
